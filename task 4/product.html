@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moni Homemade Cakes</title>
+
+    <!-- iconlink -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .rec {
+            background: #f9f9f9;
+            padding: 60px;
+            height: 650px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background: #fff;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .hero img {
+            max-width: 100%;
+        }
+
+        .stats {
+            background: #c1002d;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .stats h3 {
+            font-weight: bold;
+        }
+
+        .about {
+            padding: 60px 0;
+        }
+
+        .about h2 {
+            font-weight: bold;
+        }
+
+        .foods img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .testimonials {
+            background: #f9f9f9;
+            padding: 60px 0;
+        }
+
+        .testimonial-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        footer {
+            background: #c1002d;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        body {
+            background: #fff;
+            font-family: "Poppins", Arial, sans-serif;
+        }
+
+        .hero {
+            background: #faf6f7;
+            padding-block: 5rem;
+        }
+
+        .hero h1 {
+            color: #d6336c;
+            font-weight: 700;
+            font-size: clamp(2rem, 2.5vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            max-width: 44ch;
+        }
+
+        /* Cake display */
+        .cake-stage {
+            position: relative;
+            height: 320px;
+            width: 70%;
+        }
+
+        .cake-back,
+        .cake-front {
+            position: absolute;
+            object-fit: contain;
+            filter: drop-shadow(0 6px 20px rgba(0, 0, 0, .15));
+        }
+
+        .cake-back {
+            right: 35%;
+            bottom: 12%;
+            height: 72%;
+            z-index: 1;
+            width: 60%;
+        }
+
+        .cake-front {
+            right: -6%;
+            bottom: 0;
+            height: 90%;
+            z-index: 2;
+        }
+
+        @media(max-width:576px) {
+            .cake-back {
+                right: 45%;
+                height: 65%;
+            }
+
+            .cake-front {
+                right: -12%;
+                height: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/Cake logo.png" width="90%" height="70px">
+            </a>
+
+            <!-- Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="aboutus.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger fw-bold" href="#">Product</a></li>
+                </ul>
+
+                <!-- Search -->
+                <form class="d-flex me-3">
+                    <input class="form-control border-danger" type="search" placeholder="Search Product">
+                </form>
+
+                <!-- Cart -->
+                <a href="#" class="text-danger fs-4"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Left: Text -->
+                <div class="col-lg-6">
+                    <h1>Best Cake's here</h1>
+                    <p>
+                        We believe every slice should feel like home.
+                        Our cakes are baked fresh each day with simple ingredients,
+                        a little patience, and a lot of love.
+                        Perfect for celebrations—or just because you deserve a treat.
+                    </p>
+                </div>
+
+                <!-- Right: Cake images -->
+                <div class="col-lg-6">
+                    <div class="cake-stage">
+                        <img src="assets/img/about us img.png" alt="Whole Strawberry Cake" class="cake-back">
+                        <img src="assets/img/about us img 2.png" alt="Slice of Strawberry Cake" class="cake-front">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+<!-- row1 -->
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/pro 3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #c1002d;" class="h3">Red Velvet</h3>
+                        <h3 class="card-title" style="color: #000000;" class="h3">$100</h3>
+                        <p class="card-text" style="color: #666363;">Some quick example text to build on the card title
+                            and make up the bulk of
+                            the card’s content.</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-danger" type="button">Add to Cart</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/pro 1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: #c1002d;" class="h3">Mango Cake</h3>
+                            <h3 class="card-title" style="color: #000000;" class="h3">$250</h3>
+                            <p class="card-text" style="color: #666363;">Some quick example text to build on the card
+                                title and make up the bulk of
+                                the card’s content.</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-danger" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/pro 4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: #c1002d;" class="h3">Chocolate</h3>
+                            <h3 class="card-title" style="color: #000000;" class="h3">$750</h3>
+                            <p class="card-text" style="color: #666363;">Some quick example text to build on the card
+                                title and make up the bulk of
+                                the card’s content.</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-danger" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <br>
+    <!-- row2 -->
+      <div class="container">
+        <div class="row">
+
+
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/pro 2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #c1002d;" class="h3">Red Velvet</h3>
+                        <h3 class="card-title" style="color: #000000;" class="h3">$100</h3>
+                        <p class="card-text" style="color: #666363;">Some quick example text to build on the card title
+                            and make up the bulk of
+                            the card’s content.</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-danger" type="button">Add to Cart</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/pro 5.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: #c1002d;" class="h3">Mango Cake</h3>
+                            <h3 class="card-title" style="color: #000000;" class="h3">$250</h3>
+                            <p class="card-text" style="color: #666363;">Some quick example text to build on the card
+                                title and make up the bulk of
+                                the card’s content.</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-danger" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/pro 6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: #c1002d;" class="h3">Chocolate</h3>
+                            <h3 class="card-title" style="color: #000000;" class="h3">$750</h3>
+                            <p class="card-text" style="color: #666363;">Some quick example text to build on the card
+                                title and make up the bulk of
+                                the card’s content.</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-danger" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <br>
+    <!-- row3 -->
+      <div class="container">
+        <div class="row">
+
+
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/img/pro 6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: #c1002d;" class="h3">Red Velvet</h3>
+                        <h3 class="card-title" style="color: #000000;" class="h3">$100</h3>
+                        <p class="card-text" style="color: #666363;">Some quick example text to build on the card title
+                            and make up the bulk of
+                            the card’s content.</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-danger" type="button">Add to Cart</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/pro 8.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: #c1002d;" class="h3">Mango Cake</h3>
+                            <h3 class="card-title" style="color: #000000;" class="h3">$250</h3>
+                            <p class="card-text" style="color: #666363;">Some quick example text to build on the card
+                                title and make up the bulk of
+                                the card’s content.</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-danger" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/pro 9.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: #c1002d;" class="h3">Chocolate</h3>
+                            <h3 class="card-title" style="color: #000000;" class="h3">$750</h3>
+                            <p class="card-text" style="color: #666363;">Some quick example text to build on the card
+                                title and make up the bulk of
+                                the card’s content.</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-danger" type="button">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <br>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="text-center mb-5">Testimonials <br> What our client Say's</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-box">
+                        <p>“These are amazing cakes, super delicious and fresh. Highly recommended! . Highly
+                            recommended!. Highly recommended!. ”</p>
+                        <h6>- Keerthana</h6>
+                        <img src="assets/img/testimonial 3.png" width="35%" height="50px" class="img-fluid"><br>
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-box">
+                        <p>“Best homemade cakes ever. I always order for birthdays and events.”</p>
+                        <h6>- Vickram</h6>
+                        <img src="assets/img/testimonial 2.png" width="35%" height="30px" class="img-fluid"><br>
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-box">
+                        <p>“Wonderful taste and great quality, delivered on time. Love it! These are my dream cake i
+                            literally feel the heaven ehen i taste it These are my dream cake ”</p>
+                        <h6>- Manjokumar</h6>
+                        <img src="assets/img/testimonial 1.png" width="35%" height="50px" class="img-fluid"><br>
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- About -->
+                <div class="col-md-3">
+                    <img src="assets/img/Artboard 2@4x 1 (1).png" width="60%" height="70px">
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. </p>
+                </div>
+
+                <!-- Products -->
+                <div class="col-md-2">
+                    <h5>Products</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Cake's</a></li>
+                        <li><a href="#">Chocolate's</a></li>
+                        <li><a href="#">Wedding Cake</a></li>
+                        <li><a href="#">Birthday Cake</a></li>
+                        <li><a href="#">Pop's</a></li>
+                    </ul>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-md-2">
+                    <h5>Useful link</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Product's</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Footer</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacts -->
+                <div class="col-md-3">
+                    <h5>Contacts</h5>
+                    <p><i class="fa-solid fa-phone"></i> +91 852 963 1278</p>
+                    <p><i class="fa-solid fa-envelope"></i> monihomemadecakes@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>No:12/8 Annamalai street, Anna nagar, Chennai-600 023.
+                    </p>
+                </div>
+
+                <!-- Subscribe -->
+                <div class="col-md-2">
+                    <h5>Subscribe</h5>
+                    <div class="subscribe-box d-flex">
+                        <input type="email" placeholder="Enter your Mail">
+                        <button>NEXT</button>
+                    </div>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+            </div>
+        </div>
+    </footer>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
